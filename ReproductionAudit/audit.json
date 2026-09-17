@@ -1,0 +1,14 @@
+{
+  "mode": "existing_checkpoint_original_map_inference",
+  "python": "3.13.3",
+  "torch": "2.8.0+cu129",
+  "device": "cuda",
+  "expected_maps": 43,
+  "completed_maps": 43,
+  "failures": [],
+  "checkpoint_sha256": "e6b9df8574547b54a3de5b76754f66014852c2b615b0c11c888d86e1ef1fbbe6",
+  "scaler_sha256": "c944423a994a77ba6129ec2d095de404d7d0d9d13ca8f71e2a7acd0e2f8b8185",
+  "impostor_pairs": 903,
+  "identical_descriptor_pairs": 11,
+  "note": "No calibrated threshold, independent validation, attack ROC or retraining yet."
+}
