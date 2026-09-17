@@ -6,9 +6,14 @@
   "expected_maps": 43,
   "completed_maps": 43,
   "failures": [],
-  "checkpoint_sha256": "e6b9df8574547b54a3de5b76754f66014852c2b615b0c11c888d86e1ef1fbbe6",
+  "checkpoint_sha256": "010832bddce37d867fb8f95d524da27f0e31275ec3f6bf7003d05edbd2d9acff",
   "scaler_sha256": "c944423a994a77ba6129ec2d095de404d7d0d9d13ca8f71e2a7acd0e2f8b8185",
   "impostor_pairs": 903,
   "identical_descriptor_pairs": 11,
+  "same_record_directed_impostor_trials": 1806,
+  "nominal_threshold": 0.9,
+  "accepted_impostors": 369,
+  "empirical_false_acceptance_fraction": 0.20431893687707642,
+  "registration_time": 1789600000,
   "note": "No calibrated threshold, independent validation, attack ROC or retraining yet."
 }

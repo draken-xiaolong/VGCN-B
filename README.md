@@ -39,6 +39,7 @@ Run from this repository root, using a UTF-8 console:
 ```
 python -X utf8 reproduction_audit.py
 python -X utf8 reproduce_compound.py
+python -X utf8 key_scrambling_audit.py
 ```
 
 These commands write fresh outputs under `ReproductionAudit`. The second command
@@ -47,7 +48,21 @@ excluded from Git. The supplied inference checkpoint retains only model weights,
 without optimizer state. It has no embedded configuration; the loader uses the
 original defaults (13 input features, hidden width 128, output width 1024, dual pooling).
 
+To use an external original-data directory without copying it, set `VGCN_TEST_DATA`
+to the 43-map test GeoJSON directory and `VGCN_COMPOUND_DATA` to the six-map directory.
+The key-scrambling diagnostic demonstrates why different-key registration similarity
+must not be substituted for impostor testing against the claimed record's key.
+
+The compound wrapper fixes registration time to `1789600000` (override with
+`VGCN_REGISTRATION_TIMESTAMP`) and sorts input filenames. The original script used
+wall-clock time to scramble the logo, which can slightly change recovered-logo NC
+between runs. A public fixed timestamp is an evaluation control, not a secret key.
+
 ## Rebuild augmentation and train
+
+Run `python -X utf8 smoke_train.py` for a small synthetic test of early and late
+loss schedules, finite gradients/weights, and parameter updates. This test requires
+no map data and does not establish full training reproduction.
 
 The original scripts use working-directory-relative paths. Execute each stage
 from the indicated directory, in this order:

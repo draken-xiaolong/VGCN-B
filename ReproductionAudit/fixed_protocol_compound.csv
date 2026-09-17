@@ -1,0 +1,9 @@
+﻿复合攻击(顺序),VGAT,类型
+复合(Fig1→Fig10),,header
+  H51-BRGA,0.964831,data
+  H51-RESA,0.963278,data
+  H51-RESP,0.998416,data
+  tianjin-latest-free.shp-gis_osm_pois_free_1,1.000000,data
+  tianjin-latest-free.shp-gis_osm_railways_free_1,0.866925,data
+  tianjin-latest-free.shp-gis_osm_waterways_free_1,0.692533,data
+  Average,0.914331,average

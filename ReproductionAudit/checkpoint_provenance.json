@@ -1,0 +1,6 @@
+{
+  "original_checkpoint_sha256": "e6b9df8574547b54a3de5b76754f66014852c2b615b0c11c888d86e1ef1fbbe6",
+  "release_checkpoint_sha256": "010832bddce37d867fb8f95d524da27f0e31275ec3f6bf7003d05edbd2d9acff",
+  "all_parameter_tensors_identical": true,
+  "state_dict_entries": 10
+}

@@ -1,0 +1,14 @@
+{
+  "maps": [
+    "H51-AANP",
+    "H51-BRGP"
+  ],
+  "raw_bit_agreement": 1.0,
+  "different_key_zero_watermark_nc": 0.5308476440131075,
+  "impostor_recovery_nc_using_claimed_record_key": 1.0000000000000002,
+  "impostor_recovery_nc_using_query_own_key_INCORRECT_PROTOCOL": 0.5754510855264824,
+  "same_key_permutation_preserves_hamming": true,
+  "arnold_matrix_period_mod_32": 24,
+  "interpretation": "Different-key registration appearance can differ while same-record impostor verification still accepts a collided descriptor. Arnold iteration count alone gives only 24 distinct permutations at N=32.",
+  "reference": "Author-provided 2026-0166__PDFA.pdf, Section 2.3, PDF page 6. The reference permutes the logo; this diagnostic tests the proposed feature-permutation variation."
+}

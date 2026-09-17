@@ -19,6 +19,7 @@ ReproductionAudit/compound/
 *.geojson
 *.pkl
 *.pth
+*.npz
 !VGCN/models/gcn_model_best.pth
 !convertToGraph/Graph/TrainingSet/cache/global_scaler.pkl
 **/Attacked/

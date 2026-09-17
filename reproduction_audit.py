@@ -6,6 +6,7 @@ This is checkpoint inference, not a claim of training reproduction.
 import csv
 import hashlib
 import json
+import os
 import platform
 import sys
 from pathlib import Path
@@ -23,7 +24,10 @@ def main():
     out = ROOT / 'ReproductionAudit'
     out.mkdir(exist_ok=True)
     model, device = f.load_improved_gat_model('cuda' if torch.cuda.is_available() else 'cpu')
-    files = sorted((ROOT / 'convertToGeoJson/GeoJson/TestSet').glob('*.geojson'))
+    data_dir = Path(os.environ.get('VGCN_TEST_DATA', str(ROOT / 'convertToGeoJson/GeoJson/TestSet')))
+    files = sorted(data_dir.glob('*.geojson'))
+    if not files:
+        raise FileNotFoundError(f'No original test GeoJSON maps found: {data_dir}')
     descriptors, rows, failures = [], [], []
     for path in files:
         print('AUDIT', path.name, flush=True)
@@ -42,6 +46,8 @@ def main():
         writer.writeheader()
         writer.writerows(rows)
     logo = f.load_cat32().reshape(-1)
+    if descriptors:
+        np.savez_compressed(out / 'descriptor_cache.npz', bits=np.stack(descriptors), names=np.array([r['name'] for r in rows]))
     pairs = []
     for i, a in enumerate(descriptors):
         for j in range(i + 1, len(descriptors)):
@@ -58,6 +64,27 @@ def main():
             writer = csv.DictWriter(stream, fieldnames=list(pairs[0]))
             writer.writeheader()
             writer.writerows(pairs)
+    # Verification uses the key of the claimed registration, not the query's own key.
+    # Evaluate the original Arnold scheme under a fixed public registration time.
+    directed = []
+    registration_time = 1789600000
+    positions = np.arange(1024, dtype=np.int64).reshape(32,32)
+    for i, a in enumerate(descriptors):
+        key, _ = f.generate_scramble_key(rows[i]['name'], timestamp=registration_time)
+        permuted_positions = f.scramble_image(positions, key).ravel()
+        inverse = np.argsort(permuted_positions)
+        for j, b in enumerate(descriptors):
+            if i == j:
+                continue
+            recovered = logo ^ (a ^ b)[inverse]
+            score = f.calc_nc(logo, recovered)
+            directed.append({'claimed_map':rows[i]['name'], 'query_map':rows[j]['name'],
+                             'recovered_logo_nc':score, 'accept_at_nominal_0_90':int(score>=0.90)})
+    if directed:
+        with (out / 'same_record_impostors.csv').open('w',newline='',encoding='utf-8') as stream:
+            writer = csv.DictWriter(stream,fieldnames=list(directed[0]))
+            writer.writeheader()
+            writer.writerows(directed)
     report = {'mode':'existing_checkpoint_original_map_inference', 'python':platform.python_version(),
               'torch':torch.__version__, 'device':device, 'expected_maps':len(files),
               'completed_maps':len(rows), 'failures':failures,
@@ -65,6 +92,11 @@ def main():
               'scaler_sha256':hashlib.sha256(f.GLOBAL_SCALER_PATH.read_bytes()).hexdigest(),
               'impostor_pairs':len(pairs),
               'identical_descriptor_pairs':sum(p['bit_agreement']==1 for p in pairs),
+              'same_record_directed_impostor_trials':len(directed),
+              'nominal_threshold':0.90,
+              'accepted_impostors':sum(p['accept_at_nominal_0_90'] for p in directed),
+              'empirical_false_acceptance_fraction':sum(p['accept_at_nominal_0_90'] for p in directed)/len(directed) if directed else None,
+              'registration_time':registration_time,
               'note':'No calibrated threshold, independent validation, attack ROC or retraining yet.'}
     (out / 'audit.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
     print(json.dumps(report,indent=2),flush=True)
