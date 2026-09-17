@@ -4,14 +4,19 @@ This repository preserves the implementation associated with VGCN-B and adds
 explicit reproducibility checks. It is **not yet a fully reproduced or validated
 ownership-verification system**. Read `REPRODUCTION_STATUS.md` before use.
 
+**Moving to another computer?** Follow [MIGRATION.md](MIGRATION.md) (中文),
+restore the original-data archive and run `python verify_inputs.py` before
+`python run_reproduction.py`. A clone alone does not contain the original maps.
+
 ## Environment
 
 Use Python 3.11 or newer. Install the PyTorch build appropriate for your machine,
 then `python -m pip install -r requirements.txt`. The audit ran with Python 3.13.3,
 PyTorch 2.8.0+cu129 and an RTX 5070 Ti. The original scaler was serialized by
 scikit-learn 1.6.1; use that version to avoid a cross-version pickle warning.
-Dependencies other than the installed audit environment have not been tested as
-a fresh environment. Local model/scaler files are Python-serialized artifacts;
+For the independently installed CPU environment use the complete pinned
+`requirements-cpu-win-py313.lock.txt` and the installation order in `MIGRATION.md`.
+Local model/scaler files are Python-serialized artifacts;
 only load artifacts from a trusted source.
 
 ## Data layout

@@ -22,13 +22,28 @@ The feature-permutation counterexample produces different-key zero-watermark NC
 Arnold iteration counts provide only 24 different permutations for 32x32 inputs
 with the matrix used by this implementation.
 
-The released wrapper fixes registration time and sorts input files. Its six-map
-compound NC mean is 0.914331; two consecutive runs produced byte-identical result
-CSVs. This is an explicitly controlled reproduction variant, not an exact replay
-of the historical run, whose registration time was not fixed. The earlier audit
-with wall-clock registration gave 0.913014 and the unmodified release rerun gave
-0.913640. All means round to 0.91.
+Migration verification found that the original graph converter reused existing
+graph caches solely by file count, even after attack inputs changed. Therefore
+the earlier 0.914331 mean and repeated identical CSVs did not demonstrate a clean
+reproduction. The wrapper now rebuilds its generated graphs on every invocation,
+fixes registration time, sorts inputs, and checks all six results. Clean CPU and
+GPU runs both give mean NC 0.902804 with identical six-decimal result CSVs.
+This differs from the historical 0.912462 and does not reproduce the original
+rounded 0.91. Earlier wall-clock/cached runs are retained as audit history only.
 
 The synthetic training smoke test passed for early and late loss schedules with
 finite reported losses and model weights and a nonzero parameter update. No
 original-data training claim follows from this smoke test.
+
+## Fresh-environment migration check (2026-09-17)
+
+A fresh GitHub clone on another drive and a newly installed isolated Python 3.13
+environment (no system site packages) passed the portable workflow on CPU.
+All 98 original inputs/resources matched SHA-256 checks. Inference completed all
+43 maps with the same 11 descriptor collisions and 369/1806 accepted impostors.
+The six rebuilt compound results matched a separately rebuilt GPU run byte for
+byte (CSV precision: six decimal places). Training smoke, key diagnostic and
+Fig. 5 generation passed. Fresh `npm ci` and the two local registry tests passed.
+The full dependency lock and machine-readable `migration_validation.json` are
+included. This emulates migration on the same physical host; it is not a test on
+a second computer and does not establish full training or baseline reproduction.

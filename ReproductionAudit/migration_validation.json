@@ -1,0 +1,280 @@
+{
+  "status": "passed",
+  "quick": false,
+  "full_retraining": false,
+  "steps": [
+    {
+      "script": "verify_inputs.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/verify_inputs.log"
+    },
+    {
+      "script": "smoke_train.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/smoke_train.log"
+    },
+    {
+      "script": "figures/fig5/generate_fig5.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/generate_fig5.log"
+    },
+    {
+      "script": "reproduction_audit.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/reproduction_audit.log"
+    },
+    {
+      "script": "reproduce_compound.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/reproduce_compound.log"
+    },
+    {
+      "script": "key_scrambling_audit.py",
+      "exit_code": 0,
+      "log": "ReproductionAudit/portable_run/key_scrambling_audit.log"
+    }
+  ],
+  "inference": {
+    "completed_maps": 43,
+    "failures": [],
+    "identical_descriptor_pairs": 11,
+    "accepted_impostors": 369,
+    "same_record_directed_impostor_trials": 1806
+  },
+  "compound": {
+    "scores": {
+      "H51-BRGA": 0.964831,
+      "H51-RESA": 0.963278,
+      "H51-RESP": 0.998416,
+      "tianjin-latest-free.shp-gis_osm_pois_free_1": 1.0,
+      "tianjin-latest-free.shp-gis_osm_railways_free_1": 0.86567,
+      "tianjin-latest-free.shp-gis_osm_waterways_free_1": 0.62463
+    },
+    "matches_clean_reference_at_1e_minus_6": true
+  },
+  "date": "2026-09-17",
+  "method": "GitHub fresh clone on another drive, isolated venv without system site packages, same physical Windows host",
+  "python": "3.13.3",
+  "torch": "2.8.0+cpu",
+  "scikit_learn": "1.6.1",
+  "input_verification": {
+    "checked_files": 98,
+    "failures": 0
+  },
+  "pip_check": "No broken requirements found",
+  "node": "24.16.0",
+  "npm": "11.13.0",
+  "registry": {
+    "fresh_npm_ci": true,
+    "passed_tests": 2,
+    "compiler": "solc 0.8.26"
+  },
+  "compound_cache_fix": "Always rebuild generated graphs; file count is not a valid cache key.",
+  "compound_mean_nc": 0.902804,
+  "legacy_cached_mean_nc_NOT_clean_reproduction": 0.914331,
+  "original_historical_mean_nc_NOT_reproduced": 0.912462,
+  "gpu_cross_check": {
+    "attacked_geojson_equal": true,
+    "graphs": [
+      {
+        "path": "graphs/Attacked/compound_seq/H51-BRGA/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            50,
+            13
+          ],
+          [
+            50,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Attacked/compound_seq/H51-RESA/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            33,
+            13
+          ],
+          [
+            33,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Attacked/compound_seq/H51-RESP/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            284,
+            13
+          ],
+          [
+            284,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Attacked/compound_seq/tianjin-latest-free.shp-gis_osm_pois_free_1/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            846,
+            13
+          ],
+          [
+            846,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Attacked/compound_seq/tianjin-latest-free.shp-gis_osm_railways_free_1/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            3009,
+            13
+          ],
+          [
+            3009,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Attacked/compound_seq/tianjin-latest-free.shp-gis_osm_waterways_free_1/compound_seq_all_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            570,
+            13
+          ],
+          [
+            570,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/H51-BRGA_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            195,
+            13
+          ],
+          [
+            195,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/H51-RESA_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            263,
+            13
+          ],
+          [
+            263,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/H51-RESP_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            1093,
+            13
+          ],
+          [
+            1093,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/tianjin-latest-free.shp-gis_osm_pois_free_1_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            1967,
+            13
+          ],
+          [
+            1967,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/tianjin-latest-free.shp-gis_osm_railways_free_1_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            6391,
+            13
+          ],
+          [
+            6391,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      },
+      {
+        "path": "graphs/Original/tianjin-latest-free.shp-gis_osm_waterways_free_1_graph.pkl",
+        "features_equal": true,
+        "edges_equal": true,
+        "shapes": [
+          [
+            1186,
+            13
+          ],
+          [
+            1186,
+            13
+          ]
+        ],
+        "max_feature_difference": 0.0
+      }
+    ]
+  },
+  "limits": [
+    "Not tested on a second physical computer",
+    "Full retraining, baselines and ablations unverified",
+    "Original data archive must be transferred separately",
+    "Manuscript backup is private and not in the public Git repository"
+  ],
+  "compound_csv_sha256": "2d4f4d29aa1377e5c063d3947d4bac80846409610233fafcbf8934726627f093"
+}

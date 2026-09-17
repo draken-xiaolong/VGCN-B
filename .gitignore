@@ -32,3 +32,5 @@ ReproductionAudit/compound/
 !convertToGraph/Graph/TrainingSet/cache/
 **/logs/
 figures/*/output/
+ReproductionAudit/portable_run/
+.venv/

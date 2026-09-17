@@ -1,0 +1,495 @@
+{
+  "description": "Original inputs and inference resources; no attacked maps. SHA-256 checks file identity, not dataset licensing.",
+  "files": [
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-AANP.geojson",
+      "bytes": 1573127,
+      "sha256": "8b64846936ff21dc2056006b2a94b5c4aef9b63a97524d9f22f5d0ec379008ab"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-AGNP.geojson",
+      "bytes": 766195,
+      "sha256": "4ef5a4e40839f18cb42a040718843137e340d534ea2fbd493434e17a72cac576"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-BOUA.geojson",
+      "bytes": 5600849,
+      "sha256": "e159bdb6e065240ae8331b93fb93cc864c646227721d06fc82207972eadea180"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-BOUL.geojson",
+      "bytes": 2890326,
+      "sha256": "f88ddc3b4d126ea78c08a7aca5c0d910d6440ab246b09f6ca106885e92755213"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-BRGA.geojson",
+      "bytes": 12604481,
+      "sha256": "aceb790d538954648b173181f27804aefde859b61156c3fe909d1cd7bef32d73"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-BRGL.geojson",
+      "bytes": 12052096,
+      "sha256": "4f737532f9f67dbfbf09c4b363c503a193d88222c6864229152182d728b65690"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-BRGP.geojson",
+      "bytes": 104672,
+      "sha256": "f6b30ee1c83448557be9bc9010bdf167d8a0ce9cdad1f486296c6bb2288936fd"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-CPTL.geojson",
+      "bytes": 6404,
+      "sha256": "756365399545e818f500a052d24419d03af40dc4fcb6221075e025c760aaec6e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HFCA.geojson",
+      "bytes": 328098,
+      "sha256": "c8a6fde7eab93bd1235ac27c0c48615d1b11fc7bf80bfa67a74a57f22933b0f5"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HFCL.geojson",
+      "bytes": 2539819,
+      "sha256": "f94f26efea03658ac5c1dbdb1d1db7d4a19cfcc0477c489ba61413a72ea50735"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HFCP.geojson",
+      "bytes": 6440,
+      "sha256": "ead08a867bce284bfcf42365e32462d56cf5a8cd89c096861b2838e97fb1791a"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HYDA.geojson",
+      "bytes": 5563910,
+      "sha256": "c158a73ce497afec6839213c3829466f284e6138f98be7aadcec6d3c47b2cbd3"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HYDL.geojson",
+      "bytes": 16874283,
+      "sha256": "994e26a8d355a332b17e1de141250d7124626ffa63701f57b43e5f8aae2077b7"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-HYDP.geojson",
+      "bytes": 63711,
+      "sha256": "d8c3d9928e22ff2618d89156b63ba123de9d50f226d27567738f3fad71e18078"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-LFCL.geojson",
+      "bytes": 1242446,
+      "sha256": "1b52f2d1ab24af518e390ed7a986d384f154dce65399f08e4ffdcca66095276a"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-LFCP.geojson",
+      "bytes": 499689,
+      "sha256": "721b8e68909294e8ced15ca2c0e76efd0ab9c8b0b4801eea258e7729475a7add"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-LRDL.geojson",
+      "bytes": 24338389,
+      "sha256": "bc4c94f334613f573032cc4b79c95d4544519ee21f0ccbaaeb55a351d8dcb048"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-LRRL.geojson",
+      "bytes": 3883036,
+      "sha256": "872e078fcd09682588b1b010d0d558bfdf236872a38bc512c98a30d5cb769ab3"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-RESA.geojson",
+      "bytes": 496363,
+      "sha256": "dbc6c5cdc4c1fcfd1c3ec976e4761b4e4bdea8689849eae879f9af5a3f86b782"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-RESP.geojson",
+      "bytes": 544702,
+      "sha256": "f62955bd9663e88d99b1b7d07cd0f3e7cf4169dee3ae1510b1c7a4bf6118f929"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-RFCA.geojson",
+      "bytes": 5945,
+      "sha256": "316dca5963cd7388037157342cf7a8bf6c1bdf2d818ea3dcd4d9b1c920476009"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-RFCL.geojson",
+      "bytes": 1879,
+      "sha256": "b03e937546b2708e346a95e974ba9a5b7babe10b1c6b5fcece0933a8e00118ad"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-RFCP.geojson",
+      "bytes": 35287,
+      "sha256": "f195071d5b4eef5b6191bd3eadf2171f516b10d9d13b0c50de38f71308e7ce10"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-TERA.geojson",
+      "bytes": 21960,
+      "sha256": "7bf4897c5c58b1d31f7b58cfd708bf24f181b34bd3da5e7483c41a685724a280"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-TERL.geojson",
+      "bytes": 10021399,
+      "sha256": "44bad7949beabee3e721c3af272c91345092e30b29fdae93d1806aea9c71d766"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-TERP.geojson",
+      "bytes": 31632,
+      "sha256": "69e46b5cb6f2629dc20220b4a63c71ed8bedf37365501a1060825a4182dd82af"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-VEGA.geojson",
+      "bytes": 5918403,
+      "sha256": "3d4a69e5926541edc7201c1bd6e159b8ab488e87ac529bc2e023d7a8c9f2224e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/H50-VEGP.geojson",
+      "bytes": 449,
+      "sha256": "50f9ec458b29fc6bdafcca11836dea8cebf84cb6179a2bc47ccf50df1be366ea"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_buildings_a_free_1.geojson",
+      "bytes": 47642644,
+      "sha256": "716a35649bfe52a5e9d52206d45c42b1750238f5560920b1b3eec44d9e51b752"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_landuse_a_free_1.geojson",
+      "bytes": 11575833,
+      "sha256": "776dfb6605a4eb67b9de074290be169cef65a3771891afa8e452a925afbeaa9a"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_natural_a_free_1.geojson",
+      "bytes": 7254,
+      "sha256": "1a41f5555e4c3995a167f2506a9b3ef8693ab89454a0e8d4d6346edf40341803"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_natural_free_1.geojson",
+      "bytes": 774495,
+      "sha256": "b380300b69eb319abbab8a78d47006158ad5f78657a400b471644d8f219537b7"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_places_a_free_1.geojson",
+      "bytes": 106881,
+      "sha256": "6eb4d207b3f033acf32c710a75e4aaf80b9ea7265f37af6085a862112e2bcf34"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_places_free_1.geojson",
+      "bytes": 136244,
+      "sha256": "5684454d95f30c5598c906e0db1f57374b8b6404398d241e0c7115d603112a79"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_pofw_a_free_1.geojson",
+      "bytes": 61826,
+      "sha256": "24351bf42faea61bc95fd4f28ab6a60fb9ef587851ff80d93d0ee33771d4af7d"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_pofw_free_1.geojson",
+      "bytes": 29886,
+      "sha256": "b37565735558686d19a18b433afd54c0a3b406c0159ead504b23d241ba8f703e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_pois_a_free_1.geojson",
+      "bytes": 5054999,
+      "sha256": "6b9d18b85d39f4d2afa6305cfdf61d7aefead56d7f515f6433dd34ebc4126124"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_pois_free_1.geojson",
+      "bytes": 2814708,
+      "sha256": "199c760765fbbda648ed58b6d053867290f008d29ca326291f03a96dd2a3a237"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_railways_free_1.geojson",
+      "bytes": 2712352,
+      "sha256": "303f8cb00f9fde24e42a68c01184001ae4eb1c5dbf1f81504d6b7423e9f8b39c"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_roads_free_1.geojson",
+      "bytes": 75114686,
+      "sha256": "a1a16db2ee5f833c9672e190f517bdc4f0ebbc28bd90720f95734cc29598baa9"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_traffic_a_free_1.geojson",
+      "bytes": 923264,
+      "sha256": "3eb10e4b9ca57f29680ebf0fb0bb964cd237b2161b2b41be568abf80eaaa4510"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_traffic_free_1.geojson",
+      "bytes": 2886775,
+      "sha256": "b754e0391c02fe3c601e38713c831addc7bf6860eddec2cdd6281240b32bd99f"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_transport_a_free_1.geojson",
+      "bytes": 233452,
+      "sha256": "1f2918bd32111eaa9fe3054abf14884b4816c9583050f580a7d7d94e07e77c41"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_transport_free_1.geojson",
+      "bytes": 5940657,
+      "sha256": "784c0adf5dff5a3372d281885f64b2d85727f7effc583e4b74cea131417d6461"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_water_a_free_1.geojson",
+      "bytes": 7170555,
+      "sha256": "9d5d398d8aeb78916ea317293e0be7d94c9faad6eac29ffb44f4417a35bc6203"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TrainingSet/shanghai-latest-free.shp-gis_osm_waterways_free_1.geojson",
+      "bytes": 5679621,
+      "sha256": "67a3a29d4762b340415c8909d1c1bce44be31eac7f2b1648cb3953ddf9f66efb"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-AANP.geojson",
+      "bytes": 1221231,
+      "sha256": "b9ffd4558299d407acdbd85c2244d42f722a8b911df385a989089fac70dcb755"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-AGNP.geojson",
+      "bytes": 247210,
+      "sha256": "09a9bfd81323bd49a5b8dd2dc5ba415c7bd30ffb6ca75de958b5c978663705d9"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BOUA.geojson",
+      "bytes": 4521437,
+      "sha256": "ccfd675601bb0e20b3cebad614700a2681b4c8eb897ab73a6c5c98fc6d5e876b"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BOUL.geojson",
+      "bytes": 2345506,
+      "sha256": "2d84ac8dfc88838ca7a2c90268cb44d81cf0774ee6d3c9aac8bf8b7c0ad5c60e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BOUP.geojson",
+      "bytes": 1309,
+      "sha256": "905a1ab6036cfe6e0e7d9ee89e9c26ac5305d2af3a42a5e0e9491275b03056d2"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BRGA.geojson",
+      "bytes": 3006342,
+      "sha256": "e446ecdd0955f6fbd9f09a43aab79d5b087658d48f828ab9b23f5633a9584fd2"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BRGL.geojson",
+      "bytes": 2709218,
+      "sha256": "d6d18ce6af3ea09f3f85cccc62818ce500e6a0299d1e4fac5966dc7a274321e9"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-BRGP.geojson",
+      "bytes": 43072,
+      "sha256": "151a711fdb896d2abb4ca12965aad22a08a40026ff5028cfa63dd05ecf06b845"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-CPTL.geojson",
+      "bytes": 6404,
+      "sha256": "ec481fe748f7cce53114ffbc2c4f0e5d036949198ef30bd63567b15deda59da0"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HFCA.geojson",
+      "bytes": 150054,
+      "sha256": "fae3e885e51b796ff1c3df48131fce4e82a981df8fde93568d7bd7de52e0db73"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HFCL.geojson",
+      "bytes": 180722,
+      "sha256": "22c82dc949bc41492d2b65307d0a5d9a7f31a27d9802bc54a176e059bfac2207"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HFCP.geojson",
+      "bytes": 437040,
+      "sha256": "25c7fa96474dc5c37465db4004f624b46090ff3133af03907d6d02f00d595628"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HYDA.geojson",
+      "bytes": 3545570,
+      "sha256": "60b290d4c2cf77a55b10b418ea64990def8f08c5713c9c9a7f4acf5e55962d64"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HYDL.geojson",
+      "bytes": 9053714,
+      "sha256": "dcc562a62efef2fd11e1b29c25d2e44efc2d882ffdecf5aa0141355e0b8b35e9"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-HYDP.geojson",
+      "bytes": 117311,
+      "sha256": "0d033d369bca9ec347dc3f15c61cdbc71edc942d392fa65d52a6360fe18757fd"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-LFCL.geojson",
+      "bytes": 200334,
+      "sha256": "faa586f918cacb3edc284129fa603fe8d2768af920896db732a545ea24075dd7"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-LFCP.geojson",
+      "bytes": 359575,
+      "sha256": "8e364edb6d2c51b513e45681ef4967e4f76c8ad57c6477f93c54cad4172847bb"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-LRDL.geojson",
+      "bytes": 10568909,
+      "sha256": "a06ba178933a34f80a1b97705df6b6233ff1da3288f5df2c2adbdf65b2b576ee"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-LRRL.geojson",
+      "bytes": 1882116,
+      "sha256": "c3daa43eff2367d38e15436dd3730ee4d69ba09a84717dc0d1dd67eef2445fbf"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-RESA.geojson",
+      "bytes": 562371,
+      "sha256": "72b470bbdd27974a4c41275a8cd5564ea6a5f26930eb85dd83e3b79eddf73fa9"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-RESP.geojson",
+      "bytes": 176977,
+      "sha256": "4024eb4acbf74de573d4c30c29c254045ea23949c7d3a43def565df599bb4e32"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-RFCA.geojson",
+      "bytes": 43750,
+      "sha256": "3927737b3453476faa10c97ed713e35bdc96f5212df4860a9c6f21cb0a968dc1"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-RFCP.geojson",
+      "bytes": 31394,
+      "sha256": "76d132012601106feefac7f47ac18d2087b56e8fbec9932d0da4001a5e104303"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-TERL.geojson",
+      "bytes": 2088840,
+      "sha256": "7d550e7c972b792ce2ba2bda108e9565cb2823fb4f473d4849c785d0e9f9658e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-TERP.geojson",
+      "bytes": 14991,
+      "sha256": "bdeae0538508302c5491566d25252b90afe3a0760c31b322629d0d688f39be49"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/H51-VEGA.geojson",
+      "bytes": 4219600,
+      "sha256": "37363186651818da053525af92bde779e94732b66b93829412afe30d926c9a99"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_buildings_a_free_1.geojson",
+      "bytes": 24217995,
+      "sha256": "a6dbbc9ccd71c8141e78e2736d6e0d8f9eb407d57f54980983051c6caaec9105"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_landuse_a_free_1.geojson",
+      "bytes": 5176933,
+      "sha256": "81463ae8ba38b19c90a289b1e2de9c51c6c240bad2a9c186510d1688613aa687"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_natural_free_1.geojson",
+      "bytes": 64066,
+      "sha256": "acf3911b7fcaea10100d70a23d3244773f3b954e8cbf99e709943cab8759430b"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_places_a_free_1.geojson",
+      "bytes": 16975,
+      "sha256": "e7e866946edbc6a022e6d36db729e2735d0b498bb06a86f171202e710baeb490"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_places_free_1.geojson",
+      "bytes": 535572,
+      "sha256": "44606a7ccc0346335e0cbc0a76f50178a09794d56232cc54cbe94dea1f6dccc2"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_pofw_a_free_1.geojson",
+      "bytes": 21389,
+      "sha256": "248aa9d8c97e36ca15684c59de9a813568073b8ecda324eadc3e50b0a3698407"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_pofw_free_1.geojson",
+      "bytes": 2057,
+      "sha256": "85317be7ef8f3f233ae6b7b75f9c1ae341f2fdd38e8a2a27339da4cb19e8cb6e"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_pois_a_free_1.geojson",
+      "bytes": 2076866,
+      "sha256": "00f23f401ce9ce95bcc194df9fcf2bd1cc78caffe550a0cc702089919468f393"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_pois_free_1.geojson",
+      "bytes": 396794,
+      "sha256": "4241f8d6548dc5708a42f8b8ce64ad2358fde2643433b39bba5a0c7070aff7bb"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_railways_free_1.geojson",
+      "bytes": 2621293,
+      "sha256": "7664c8487d452ceec50cf0edcccf8fdf41c135dd2036fcb78cea4e7e84e6a22c"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_roads_free_1.geojson",
+      "bytes": 31213317,
+      "sha256": "2386905c70576624a8a8e70efe169bfcb253eef574396aa3ea9de35b50d98347"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_traffic_a_free_1.geojson",
+      "bytes": 368576,
+      "sha256": "bfcffc292e42a42f303e7ab5abab28fa8907959c71e91b2225dd0a5e9f525733"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_traffic_free_1.geojson",
+      "bytes": 1947578,
+      "sha256": "8f24cc9bbbeaa9751efbca9f0c171a5bcbeff8bb0551b745f321963c13ee5321"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_transport_a_free_1.geojson",
+      "bytes": 48970,
+      "sha256": "936b467b20329dcf3a0b2016edd5a1e98d06d2d31656bbc34ad24f0dfcab9710"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_transport_free_1.geojson",
+      "bytes": 621829,
+      "sha256": "da4d00b9ec9d79eb73670ff2b0e8cdfb7769e190f0af6bd1a40114d4222153ec"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_water_a_free_1.geojson",
+      "bytes": 5421804,
+      "sha256": "693b1e1fed22737ba746604c4fce34c05242982f953e343ddfc4642087b6dc08"
+    },
+    {
+      "path": "convertToGeoJson/GeoJson/TestSet/tianjin-latest-free.shp-gis_osm_waterways_free_1.geojson",
+      "bytes": 721312,
+      "sha256": "c9a57076715abce74fa01077ca24babc4e0bdc10f7e9a518f219145c238f4442"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/H51-BRGA.geojson",
+      "bytes": 3006342,
+      "sha256": "e446ecdd0955f6fbd9f09a43aab79d5b087658d48f828ab9b23f5633a9584fd2"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/H51-RESA.geojson",
+      "bytes": 562371,
+      "sha256": "72b470bbdd27974a4c41275a8cd5564ea6a5f26930eb85dd83e3b79eddf73fa9"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/H51-RESP.geojson",
+      "bytes": 176977,
+      "sha256": "4024eb4acbf74de573d4c30c29c254045ea23949c7d3a43def565df599bb4e32"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/tianjin-latest-free.shp-gis_osm_pois_free_1.geojson",
+      "bytes": 396794,
+      "sha256": "4241f8d6548dc5708a42f8b8ce64ad2358fde2643433b39bba5a0c7070aff7bb"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/tianjin-latest-free.shp-gis_osm_railways_free_1.geojson",
+      "bytes": 2621293,
+      "sha256": "7664c8487d452ceec50cf0edcccf8fdf41c135dd2036fcb78cea4e7e84e6a22c"
+    },
+    {
+      "path": "zNC-Test/vector-data-geojson/tianjin-latest-free.shp-gis_osm_waterways_free_1.geojson",
+      "bytes": 721312,
+      "sha256": "c9a57076715abce74fa01077ca24babc4e0bdc10f7e9a518f219145c238f4442"
+    },
+    {
+      "path": "VGCN/models/gcn_model_best.pth",
+      "bytes": 1459637,
+      "sha256": "010832bddce37d867fb8f95d524da27f0e31275ec3f6bf7003d05edbd2d9acff"
+    },
+    {
+      "path": "convertToGraph/Graph/TrainingSet/cache/global_scaler.pkl",
+      "bytes": 762,
+      "sha256": "c944423a994a77ba6129ec2d095de404d7d0d9d13ca8f71e2a7acd0e2f8b8185"
+    },
+    {
+      "path": "ZeroWatermark/Cat32.png",
+      "bytes": 196,
+      "sha256": "a2b2d76f1ceb3eed0761229699baee3958eec35f45b759061ad62e077a1e0147"
+    }
+  ]
+}
