@@ -31,3 +31,4 @@ ReproductionAudit/compound/
 **/cache/
 !convertToGraph/Graph/TrainingSet/cache/
 **/logs/
+figures/*/output/

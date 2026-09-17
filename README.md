@@ -100,6 +100,13 @@ integrated with the cloud scripts. For local security tests run `npm ci` followe
 by `npm test` in `BlockChain`. Compilation uses local solc 0.8.26. The two tests
 demonstrate the original vulnerability and check the prototype's record isolation.
 
+## Regenerate manuscript Fig. 5
+
+Run `python figures/fig5/generate_fig5.py`. The self-contained source-data bundle
+replots the ten attack panels in a consistent style and exports PDF, SVG and
+600 dpi PNG/TIFF. It preserves the archived numerical values and missing entries;
+this plot regeneration does not rerun the experiments.
+
 ## Scientific limitations
 
 - Original-map descriptor collisions were observed among different point maps.
