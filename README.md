@@ -21,21 +21,35 @@ only load artifacts from a trusted source.
 
 ## Data layout
 
-Raw data are not redistributed here pending source/license confirmation. Place
-the author's original GeoJSON files in:
+The original maps come from two sources with different licenses.
+
+- **OpenStreetMap extracts (included).** The 38 files named
+  `shanghai-latest-free.shp-gis_osm_*` and `tianjin-latest-free.shp-gis_osm_*`
+  were converted to GeoJSON from Geofabrik's free shapefile extracts
+  (<https://download.geofabrik.de>). They are redistributed here under the
+  Open Database License 1.0; see `DATA_LICENSE.md`.
+  Map data © OpenStreetMap contributors.
+- **National 1:1,000,000 public basic geographic data (not included).** The files
+  named `H50-*` (training) and `H51-*` (test) come from the National Geographic
+  Information Service Platform of China (<https://www.webmap.cn>). Its user
+  agreement does not permit redistribution, so these files are not included.
+  Download sheets H50 and H51 from the portal, convert the layers to GeoJSON with
+  the file names listed in `input_manifest.json`, and check them with
+  `python verify_inputs.py`.
+
+Place the files in:
 
 ```
-convertToGeoJson/GeoJson/TrainingSet/   # 46 original maps
-convertToGeoJson/GeoJson/TestSet/       # 43 original maps
-zNC-Test/vector-data-geojson/           # six representative original maps
+convertToGeoJson/GeoJson/TrainingSet/   # 46 original maps (18 OSM + 28 H50)
+convertToGeoJson/GeoJson/TestSet/       # 43 original maps (17 OSM + 26 H51)
+zNC-Test/vector-data-geojson/           # six representative original maps (3 OSM + 3 H51)
 ```
 
 The six map stems are H51-BRGA, H51-RESA, H51-RESP,
 tianjin-latest-free.shp-gis_osm_pois_free_1,
 tianjin-latest-free.shp-gis_osm_railways_free_1, and
 tianjin-latest-free.shp-gis_osm_waterways_free_1.
-Input manifests in `ReproductionAudit` identify the audited test files by hash.
-The absent raw data remain a prerequisite for full reproduction.
+`input_manifest.json` lists the SHA-256 hash of every original input file.
 
 ## Reproduce checkpoint inference
 

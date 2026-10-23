@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "tianjin-latest-free.shp-gis_osm_pofw_free_1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "3809517144", "code": 3400, "fclass": "buddhist", "name": "定光佛舍利塔" }, "geometry": { "type": "Point", "coordinates": [ 117.2686087, 40.1038989 ] } },
+{ "type": "Feature", "properties": { "osm_id": "4648433772", "code": 3300, "fclass": "muslim", "name": null }, "geometry": { "type": "Point", "coordinates": [ 117.2147011, 39.1433884 ] } },
+{ "type": "Feature", "properties": { "osm_id": "5279098635", "code": 3400, "fclass": "buddhist", "name": "九圣寺" }, "geometry": { "type": "Point", "coordinates": [ 117.1510375, 39.6359624 ] } },
+{ "type": "Feature", "properties": { "osm_id": "6704341101", "code": 3300, "fclass": "muslim", "name": "涧河服务区清真寺" }, "geometry": { "type": "Point", "coordinates": [ 118.0390665, 39.2275616 ] } },
+{ "type": "Feature", "properties": { "osm_id": "7932911343", "code": 3100, "fclass": "christian", "name": "天津基督教会山西堂" }, "geometry": { "type": "Point", "coordinates": [ 117.1865938, 39.1225068 ] } },
+{ "type": "Feature", "properties": { "osm_id": "8061754677", "code": 3300, "fclass": "muslim", "name": "清真东大寺" }, "geometry": { "type": "Point", "coordinates": [ 117.1704317, 39.1232349 ] } },
+{ "type": "Feature", "properties": { "osm_id": "8263224586", "code": 3100, "fclass": "christian", "name": "天津市滨海新区基督教会大港堂" }, "geometry": { "type": "Point", "coordinates": [ 117.4473309, 38.8498171 ] } },
+{ "type": "Feature", "properties": { "osm_id": "9939587303", "code": 3400, "fclass": "buddhist", "name": "挂甲禅寺" }, "geometry": { "type": "Point", "coordinates": [ 117.2310444, 39.0954249 ] } },
+{ "type": "Feature", "properties": { "osm_id": "12229183693", "code": 3400, "fclass": "buddhist", "name": "四面佛舍" }, "geometry": { "type": "Point", "coordinates": [ 117.0711686, 39.0931072 ] } }
+]
+}

@@ -17,6 +17,12 @@ ReproductionAudit/compound/
 *.shx
 *.dbf
 *.geojson
+
+# OpenStreetMap-derived original maps are redistributed under ODbL 1.0 (see DATA_LICENSE.md).
+# National 1:1,000,000 public basic geographic data (H50-*/H51-*) stay excluded.
+!convertToGeoJson/GeoJson/TrainingSet/*-latest-free.shp-gis_osm_*.geojson
+!convertToGeoJson/GeoJson/TestSet/*-latest-free.shp-gis_osm_*.geojson
+!zNC-Test/vector-data-geojson/*-latest-free.shp-gis_osm_*.geojson
 *.pkl
 *.pth
 *.npz
